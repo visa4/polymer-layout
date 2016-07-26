@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="it-IT" >
+<head>
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="elements.html">
+    <style is="custom-style" include="iron-flex iron-flex-alignment iron-flex-factors"></style>
+</head>
+<body class="fullbleed">
+    <template id="app" is="dom-bind">
+        <app-header condenses fixed
+                    effects="waterfall resize-snapped-title fade-background"
+                    effects-config='{"resize-snapped-title": {"startsAt": 0.8, "duration": "100ms"}, "fade-background": {"startsAt": 0.8, "endsAt": 0.9}}'>
+            <app-toolbar>
+                <h4 condensed-title>Strip advisor</h4>
+                <paper-button noink>Login</paper-button>
+                <paper-button noink>Register</paper-button>
+                <paper-icon-button icon="search" on-tap="toggleDrawer"></paper-icon-button>
+            </app-toolbar>
+            <h1 main-title>Strip advisor</h1>
+        </app-header>
+        <app-drawer id="drawer" align="right" swipe-open>
+            <div class="drawer-contents">
+                <div class="layout horizontal center-justified">
+                    <paper-input label="Nome"></paper-input>
+                </div>
+            </div>
+        </app-drawer>
+        <div class="layout horizontal center-justified">
+            <div class="app-content">
+                <paper-card class="gutter-horizontal gutter-vertical paper-card-night" elevation="1" image="img/card4.jpg">
+                    <div class="card-content">
+                        <div class="cafe-header">Porta d'oro
+                            <div class="cafe-location cafe-light">
+                                <iron-icon icon="communication:location-on"></iron-icon>
+                                <span>250 m</span>
+                            </div>
+                        </div>
+                        <paper-rating rate="3" readonly></paper-rating> <span style="color: #757575;">(1239 voti)</span>
+                        <p class="cafe-light">Small plates, salads &amp; sandwiches in an intimate setting with 12 indoor seats plus patio seating.</p>
+                    </div>
+                    <div class="card-girls layout horizontal center">
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 36px;"></iron-image>
+                        <paper-button>More girls</paper-button>
+                    </div>
+
+                </paper-card>
+                <paper-card class="gutter-horizontal gutter-vertical paper-card-night" elevation="1" image="img/card4.jpg">
+                    <div class="card-content">
+                        <div class="cafe-header">Porta d'oro
+                            <div class="cafe-location cafe-light">
+                                <iron-icon icon="communication:location-on"></iron-icon>
+                                <span>250 m</span>
+                            </div>
+                        </div>
+                        <paper-rating rate="3" readonly></paper-rating> <span style="color: #757575;">(1239 voti)</span>
+                        <p class="cafe-light">Small plates, salads &amp; sandwiches in an intimate setting with 12 indoor seats plus patio seating.</p>
+                    </div>
+                    <div class="card-girls layout horizontal center">
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 36px;"></iron-image>
+                        <paper-button>More girls</paper-button>
+                    </div>
+
+                </paper-card>
+                <paper-card class="gutter-horizontal gutter-vertical paper-card-night" elevation="1" image="img/card4.jpg">
+                    <div class="card-content">
+                        <div class="cafe-header">Porta d'oro
+                            <div class="cafe-location cafe-light">
+                                <iron-icon icon="communication:location-on"></iron-icon>
+                                <span>250 m</span>
+                            </div>
+                        </div>
+                        <paper-rating rate="3" readonly></paper-rating> <span style="color: #757575;">(1239 voti)</span>
+                        <p class="cafe-light">Small plates, salads &amp; sandwiches in an intimate setting with 12 indoor seats plus patio seating.</p>
+                    </div>
+                    <div class="card-girls layout horizontal center">
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 36px;"></iron-image>
+                        <paper-button>More girls</paper-button>
+                    </div>
+
+                </paper-card>
+                <paper-card class="gutter-horizontal gutter-vertical paper-card-night" elevation="1" image="img/card4.jpg">
+                    <div class="card-content">
+                        <div class="cafe-header">Porta d'oro
+                            <div class="cafe-location cafe-light">
+                                <iron-icon icon="communication:location-on"></iron-icon>
+                                <span>250 m</span>
+                            </div>
+                        </div>
+                        <paper-rating rate="3" readonly></paper-rating> <span style="color: #757575;">(1239 voti)</span>
+                        <p class="cafe-light">Small plates, salads &amp; sandwiches in an intimate setting with 12 indoor seats plus patio seating.</p>
+                    </div>
+                    <div class="card-girls layout horizontal center">
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 36px;"></iron-image>
+                        <paper-button>More girls</paper-button>
+                    </div>
+
+                </paper-card>
+                <paper-card class="gutter-horizontal gutter-vertical paper-card-night" elevation="1" image="img/card4.jpg">
+                    <div class="card-content">
+                        <div class="cafe-header">Porta d'oro
+                            <div class="cafe-location cafe-light">
+                                <iron-icon icon="communication:location-on"></iron-icon>
+                                <span>250 m</span>
+                            </div>
+                        </div>
+                        <paper-rating rate="3" readonly></paper-rating> <span style="color: #757575;">(1239 voti)</span>
+                        <p class="cafe-light">Small plates, salads &amp; sandwiches in an intimate setting with 12 indoor seats plus patio seating.</p>
+                    </div>
+                    <div class="card-girls layout horizontal center">
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 36px;"></iron-image>
+                        <paper-button>More girls</paper-button>
+                    </div>
+
+                </paper-card>
+                <paper-card class="gutter-horizontal gutter-vertical paper-card-night" elevation="1" image="img/card4.jpg">
+                    <div class="card-content">
+                        <div class="cafe-header">Porta d'oro
+                            <div class="cafe-location cafe-light">
+                                <iron-icon icon="communication:location-on"></iron-icon>
+                                <span>250 m</span>
+                            </div>
+                        </div>
+                        <paper-rating rate="3" readonly></paper-rating> <span style="color: #757575;">(1239 voti)</span>
+                        <p class="cafe-light">Small plates, salads &amp; sandwiches in an intimate setting with 12 indoor seats plus patio seating.</p>
+                    </div>
+                    <div class="card-girls layout horizontal center">
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 16px;"></iron-image>
+                        <iron-image src="img/circle.jpg" class="cicle" style="margin-right: 36px;"></iron-image>
+                        <paper-button>More girls</paper-button>
+                    </div>
+
+                </paper-card>
+            </div>
+        </div>
+    </template>
+    <script src="script/app.js"></script>
+</body>
+</html>
